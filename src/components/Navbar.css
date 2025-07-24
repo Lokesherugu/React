@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    background-color: beige;
+    height: 8%;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+}
+
+li{
+    list-style-type: none;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import './App.css'
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Card from "./components/Card";
 
 function App() {
+  const [count, setCount]= useState(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/> 
+      <div className="cards">
+        <Card title="Card 1" desc="the desc of Card 1"/>
+        <Card title="Card 2" desc="the desc of Card 2"/>
+        <Card title="Card 3" desc="the desc of Card 3"/>
+        <Card title="Card 4" desc="the desc of Card 4"/>
+      </div>
+      {count}
+      <button onClick={()=>{ setCount(count+1)}}>click Me</button>
+      <Footer/>
     </div>
   );
 }

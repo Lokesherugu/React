@@ -1,0 +1,6 @@
+.card{
+    height: 250px;
+    width: 280px;
+    border: 2px solid black;
+    padding: 12px;
+}
